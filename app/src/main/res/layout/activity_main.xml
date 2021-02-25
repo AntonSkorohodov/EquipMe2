@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skv_background_activity"
+    tools:context=".Activities.Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/sign_LBL_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/white"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/sign_BTN_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sign_LBL_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/skv_button_color"
+        android:text="SIGN IN" />
+<!--
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:textAllCaps="true"
+        tools:layout_editor_absoluteY="85dp" />-->
+
+</RelativeLayout>

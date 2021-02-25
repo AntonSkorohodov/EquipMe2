@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "62334559753",
+    "project_id": "equipme-10308",
+    "storage_bucket": "equipme-10308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62334559753:android:94ca71bda3b42283867ad8",
+        "android_client_info": {
+          "package_name": "com.example.equipme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62334559753-kgkpaaotgn6drgkfhouh87jtuadm0fvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMBpk3bmysbu5CbVzeRNFoC9_LbNuRnDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62334559753-kgkpaaotgn6drgkfhouh87jtuadm0fvg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

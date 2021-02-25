@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skv_main_background"
+    tools:context=".Activities.Activities.LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="40dp"
+        app:cardBackgroundColor="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/main_IMG_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/equipme_main_icon" />
+
+        <TextView
+            android:id="@+id/sign_LBL_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_IMG_logo"
+            android:layout_centerInParent="true"
+            android:text="EquipMe"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/user_LBL_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_LBL_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/cabin"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/user_LBL_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_LBL_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/cabin"
+            android:hint="Password"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/sign_BTN_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_LBL_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/skv_button_color"
+            android:fontFamily="@font/cabin_bold"
+            android:text="SIGN IN"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/register_LBL_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_BTN_in"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/cabin_medium"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+            <ProgressBar
+                android:id="@+id/register_PRB_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:visibility="gone"
+                android:layout_below="@+id/register_LBL_new"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
