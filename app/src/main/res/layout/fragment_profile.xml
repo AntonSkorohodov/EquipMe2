@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_dark_background"
+    android:layoutDirection="rtl"
+    android:layout_alignParentRight="true">
+
+<RelativeLayout
+    android:id="@+id/profile_LYT_header"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/skv_header_color">
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:elevation="100dp"
+        app:cardCornerRadius="75dp"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/profile_IMG_image"
+            android:src="@drawable/uknown_user_icon"
+            android:scaleType="centerCrop"
+            android:contentDescription="TODO" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/profile_LBL_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_LYT_header"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/skv_text_color_white"
+        android:text="NAME:"
+        />
+    <EditText
+        android:id="@+id/profile_EDT_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignTop="@+id/profile_LBL_name"
+        android:layout_toStartOf="@+id/profile_LBL_address"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/cabin"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/profile_LBL_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_LBL_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/skv_text_color_white"
+        android:text="PHONE:"/>
+
+    <EditText
+        android:id="@+id/profile_EDT_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignTop="@+id/profile_LBL_phone"
+        android:layout_toStartOf="@+id/profile_LBL_address"
+        android:textAlignment="viewEnd"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/cabin"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/profile_LBL_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_LBL_phone"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/skv_text_color_white"
+        android:text="E-MAIL:"
+        />
+    <EditText
+        android:id="@+id/profile_EDT_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignTop="@+id/profile_LBL_email"
+        android:layout_toStartOf="@+id/profile_LBL_address"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/cabin"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/profile_LBL_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_LBL_email"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/skv_text_color_white"
+        android:text="ADDRESS:"
+        />
+    <EditText
+        android:id="@+id/profile_EDT_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignTop="@+id/profile_LBL_address"
+        android:layout_toStartOf="@+id/profile_LBL_address"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/cabin"
+        android:text="" />
+
+    <Button
+        android:id="@+id/profile_BTN_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_EDT_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="UPDATE"
+        android:backgroundTint="@color/skv_button_color"
+        android:fontFamily="@font/cabin_bold"
+        android:textColor="@color/black"/>
+
+
+
+
+
+</RelativeLayout>

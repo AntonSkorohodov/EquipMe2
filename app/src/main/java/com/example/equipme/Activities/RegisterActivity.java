@@ -1,4 +1,4 @@
-package com.example.equipme.Activities.Activities;
+package com.example.equipme.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,10 +18,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -71,6 +72,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                 if(password_1.equals(password_2) == false){
                     user_LBL_password_2.setError("Password dont match");
+                    return;
                 }
 
                 authentication.createUserWithEmailAndPassword(email,password_1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -80,11 +82,16 @@ public class RegisterActivity extends AppCompatActivity {
                             Toast.makeText(RegisterActivity.this,"User created succesfully", Toast.LENGTH_LONG).show();
                             userId = authentication.getCurrentUser().getUid();
                             Log.d("Pttt","current userId: " + userId);
+                            List<String> dummy_array = new ArrayList<String>();
+                            dummy_array.add("");
                             DocumentReference documentReference = firestore.collection("users").document(userId);
                             Map<String,Object> user = new HashMap<>();
                             user.put("name",name);
                             user.put("email",email);
                             user.put("phone",phone);
+                            user.put("equipment_list",dummy_array);
+                            user.put("request_list",dummy_array);
+                            user.put("profile_img","");
                             Log.d("Pttt","User: "+user);
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override

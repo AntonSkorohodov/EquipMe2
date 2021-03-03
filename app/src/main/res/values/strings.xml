@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">EquipMe</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="TAG">Pttt</string>
+
+    <string-array name="category">
+        <item>any</item>
+        <item>camera</item>
+        <item>flash</item>
+        <item>tripod</item>
+        <item>light</item>
+        <item>lens</item>
+        <item>other</item>
+    </string-array>
 </resources>

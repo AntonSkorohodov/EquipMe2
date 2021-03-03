@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_ITM_profile"
+            android:title="Profile"
+            android:icon="@drawable/uknown_user_icon"/>
+
+        <item
+            android:id="@+id/menu_ITM_store"
+            android:title="My Store"
+            android:icon="@drawable/store_icon"/>
+
+        <item
+            android:id="@+id/menu_ITM_search"
+            android:title="Search"
+            android:icon="@drawable/search_icon"/>
+
+        <item
+            android:id="@+id/menu_ITM_request_my_equipment"
+            android:title="My Equipment Request"
+            android:icon="@drawable/equpment_rent_icon"/>
+        <item
+            android:id="@+id/menu_ITM_cart"
+            android:title="Rent Request"
+            android:icon="@drawable/cart_icon"/>
+        <item
+            android:id="@+id/menu_ITM_logout"
+            android:title="Logout"
+            android:icon="@drawable/logout_icon"/>
+
+    </group>
+</menu>

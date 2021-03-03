@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="6dp"
+    android:elevation="5dp"
+    app:cardBackgroundColor="@color/black"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:id="@+id/cart_LYT_item">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp">
+
+        <ImageView
+            android:id="@+id/cart_IMG_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_image_icon" />
+
+        <TextView
+            android:id="@+id/cart_LBL_part_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/cart_IMG_image"
+            android:fontFamily="@font/cabin_bold"
+            android:maxLines="7"
+            android:paddingLeft="10dp"
+            android:text="Line Text"
+            android:textColor="@color/skv_text_color_white" />
+
+        <TextView
+            android:id="@+id/cart_LBL_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_LBL_part_name"
+            android:layout_alignBottom="@+id/cart_IMG_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/cart_IMG_image"
+            android:fontFamily="@font/cabin_bold"
+            android:maxLines="18"
+            android:text="Description Text .........................."
+            android:textColor="@color/skv_text_light_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cart_LBL_address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_IMG_image"
+            android:layout_alignStart="@+id/cart_IMG_image"
+            android:fontFamily="@font/cabin_bold"
+            android:layout_marginStart="2dp"
+            android:paddingBottom="2dp"
+            android:text="Address: "
+            android:textColor="@color/skv_text_light_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cart_LBL_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cart_LBL_address_text"
+            android:layout_toRightOf="@+id/cart_LBL_address_text"
+            android:fontFamily="@font/cabin_bold"
+            android:paddingLeft="10dp"
+            android:paddingBottom="2dp"
+            android:text="some address"
+            android:textColor="@color/skv_text_light_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cart_LBL_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_LBL_address_text"
+            android:layout_alignStart="@+id/cart_IMG_image"
+            android:fontFamily="@font/cabin_bold"
+            android:paddingBottom="2dp"
+            android:text="Name: "
+            android:textColor="@color/skv_text_light_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cart_LBL_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cart_LBL_name_text"
+            android:layout_toRightOf="@+id/cart_LBL_address_text"
+            android:fontFamily="@font/cabin_bold"
+            android:paddingLeft="10dp"
+            android:paddingBottom="2dp"
+            android:text="Shlomi"
+            android:textColor="@color/skv_text_light_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cart_LBL_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_LBL_name_text"
+            android:layout_alignStart="@+id/cart_IMG_image"
+            android:fontFamily="@font/cabin_bold"
+
+            android:paddingBottom="2dp"
+            android:text="Date: "
+            android:textColor="@color/skv_text_light_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cart_LBL_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cart_LBL_date_text"
+            android:layout_toRightOf="@+id/cart_LBL_address_text"
+            android:fontFamily="@font/cabin_bold"
+            android:paddingLeft="10dp"
+            android:paddingBottom="2dp"
+            android:text="1800m"
+            android:textColor="@color/skv_text_light_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cart_LBL_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cart_LBL_date_text"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/cabin_bold"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="2dp"
+            android:text=""
+            android:textColor="@color/skv_text_light_gray"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

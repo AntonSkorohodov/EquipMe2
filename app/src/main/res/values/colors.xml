@@ -9,11 +9,17 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="skv_background_activity">#3E3E3E</color>
+    <color name="skv_background_requesting">#3A0000</color>
     <color name="skv_button_color">#FFB41F</color>
+    <color name="skv_button_red">#FF6161</color>
+    <color name="skv_button_green">#73FB39</color>
     <color name="skv_main_background">#FFB41F</color>
     <color name="skv_bar_color">#FFB41F</color>
+    <color name="skv_menu_color">#FFB41F</color>
     <color name="skv_notch_bar_color">#F0000000</color>
-
+    <color name="skv_text_color_white">#FFFFFFFF</color>
+    <color name="skv_header_color">#FFCB47</color>
+    <color name="skv_text_light_gray">#D9D9D9</color>
 
 
 </resources>

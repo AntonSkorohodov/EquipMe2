@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skv_background_activity">
+
+    <TextView
+        android:id="@+id/search_LBL_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/search_LBL_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_LBL_search"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:ems="12"
+        android:fontFamily="@font/cabin"
+        android:hint="Write Text"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/search_LBL_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/skv_text_color_white"
+        android:text="Category:"
+        android:layout_below="@id/search_LBL_free"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_alignStart="@id/search_LBL_free"/>
+    <Spinner
+        android:id="@+id/search_SPN_Categories"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/search_LBL_free"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/search_LBL_free"
+        android:background="@color/white"
+        />
+
+    <Button
+        android:id="@+id/search_BTN_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_LBL_category"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/skv_button_color"
+        android:fontFamily="@font/cabin_bold"
+        android:text="Search"
+        android:textColor="@color/black" />
+
+    <ProgressBar
+        android:id="@+id/search_PRB_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        android:layout_below="@+id/search_BTN_search"/>
+
+
+</RelativeLayout>

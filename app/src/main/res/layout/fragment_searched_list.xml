@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/skv_background_activity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searched_LST_equipment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/searched_list_item"/>
+
+</RelativeLayout>

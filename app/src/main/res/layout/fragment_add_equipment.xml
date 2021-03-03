@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:background="@color/cardview_dark_background"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:id="@+id/equipment_LYT_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/skv_header_color">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:elevation="100dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/equipment_IMG_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_image_icon" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/equipment_LBL_part_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equipment_LYT_header"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cabin"
+        android:text="PART NAME:"
+        android:textColor="@color/skv_text_color_white" />
+
+    <EditText
+        android:id="@+id/equipment_EDT_part_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/equipment_LBL_part_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toStartOf="@+id/equipment_LBL_part_name"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/cabin"
+        android:paddingLeft="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/equipment_LBL_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equipment_LBL_part_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cabin"
+        android:text="CATEGORY:"
+        android:textColor="@color/skv_text_color_white" />
+
+    <EditText
+        android:id="@+id/equipment_EDT_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/equipment_LBL_category"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toStartOf="@+id/equipment_LBL_part_name"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/cabin"
+        android:paddingLeft="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/equipment_LBL_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equipment_LBL_category"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cabin"
+        android:text="PRICE:"
+        android:textColor="@color/skv_text_color_white" />
+
+    <EditText
+        android:id="@+id/equipment_EDT_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/equipment_LBL_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toStartOf="@+id/equipment_LBL_part_name"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/cabin"
+        android:paddingLeft="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/equipment_LBL_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equipment_LBL_price"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cabin"
+        android:text="DESCRIPTION:"
+        android:textColor="@color/skv_text_color_white" />
+
+    <EditText
+        android:id="@+id/equipment_EDT_description"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/equipment_LBL_description"
+        android:layout_alignStart="@+id/equipment_LBL_description"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/cabin"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textAlignment="viewEnd" />
+
+    <Button
+        android:id="@+id/equipment_BTN_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equipment_EDT_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/skv_button_color"
+        android:fontFamily="@font/cabin_bold"
+        android:text="ADD"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>

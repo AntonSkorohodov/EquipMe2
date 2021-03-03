@@ -1,4 +1,4 @@
-package com.example.equipme.Activities.Activities;
+package com.example.equipme.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,8 +18,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
-import java.lang.reflect.Array;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -52,10 +50,12 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(email)){
                     user_LBL_email.setError("Email is Required");
+                    return;
                 }
 
                 if(TextUtils.isEmpty(password)){
                     user_LBL_password.setError("Password is required");
+                    return;
                 }
 
                 register_PRB_progress.setVisibility(View.VISIBLE);

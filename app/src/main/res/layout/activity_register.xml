@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/skv_main_background"
-    tools:context=".Activities.Activities.RegisterActivity">
+    tools:context=".Activities.RegisterActivity"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
