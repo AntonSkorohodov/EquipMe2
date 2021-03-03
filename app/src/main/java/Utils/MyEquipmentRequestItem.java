@@ -3,7 +3,7 @@ package Utils;
 import android.graphics.Bitmap;
 
 public class MyEquipmentRequestItem {
-    private String part_name,description,owner_id,requester_id,image_res,date,accepted,owner_name,requester_name,owner_address;
+    private String part_name,description,owner_id,requester_id,image_res,date,accepted,owner_name,requester_name,owner_address,requeste_id;
     private Bitmap image_res_bit_map;
 
 
@@ -96,6 +96,13 @@ public class MyEquipmentRequestItem {
 
     public MyEquipmentRequestItem setOwnerAddress(String owner_address) {
         this.owner_address = owner_address;
+        return this;
+    }
+
+    public String getRequestId() {return requeste_id;}
+
+    public MyEquipmentRequestItem setRequestId(String request_id) {
+        this.requeste_id = request_id;
         return this;
     }
 }

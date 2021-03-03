@@ -169,6 +169,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.menu_ITM_logout:
                 super.onBackPressed();
+
                 break;
         }
         return true;

@@ -23,6 +23,7 @@ public class Adpter_MyEquipmentRequestItem extends RecyclerView.Adapter<Adpter_M
     private ArrayList<MyEquipmentRequestItem> mData;
     private LayoutInflater mInflater;
     private ItemClickListener mClickListener;
+    private String request_id;
 
 
     public Adpter_MyEquipmentRequestItem(Context context, ArrayList<MyEquipmentRequestItem> data) {
@@ -50,6 +51,8 @@ public class Adpter_MyEquipmentRequestItem extends RecyclerView.Adapter<Adpter_M
         holder.my_equipment_request_LBL_description.setText(item.getDescription());
         holder.my_equipment_request_LBL_date.setText(item.getDate());
         holder.my_equipment_request_LBL_name.setText(item.getRequesterName());
+        request_id = item.getRequestId();
+
         if(item.getAccpeted().equals("accepted")){
             holder.my_equipment_request_LYT_item.setCardBackgroundColor(Color.parseColor("#183A00"));
             holder.my_equipment_request_BTN_accept.setVisibility(View.GONE);

@@ -118,4 +118,10 @@ public class RegisterActivity extends AppCompatActivity {
         user_LBL_password_2 = findViewById(R.id.user_LBL_password_2);
         user_BTN_register = findViewById(R.id.user_BTN_register);
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        this.finish();
+    }
 }

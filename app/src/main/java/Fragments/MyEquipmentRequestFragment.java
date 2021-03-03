@@ -73,7 +73,8 @@ public class MyEquipmentRequestFragment extends Fragment {
     }
 
     private void updateRequest(int position, String request) {
-        FirebaseFirestore.getInstance().collection("requests").document(request_list.get(position))
+        String request_id = my_equipmet_request_array.get(position).getRequestId();
+        FirebaseFirestore.getInstance().collection("requests").document(request_list.get(Integer.valueOf(request_id)))
                 .update("accepted",request).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
@@ -119,8 +120,10 @@ public class MyEquipmentRequestFragment extends Fragment {
                                                                                 .setRequesterName((String) documentSnapshot.get("requester_name"))
                                                                                 .setAccepted((String) documentSnapshot.get("accepted"))
                                                                                 .setDescription((String) documentSnapshot.get("description"))
-                                                                                .setImageResBitmap(bitmap));
+                                                                                .setImageResBitmap(bitmap)
+                                                                                .setRequestId(iter));
                                                                         my_equipment_request_LST_view.setAdapter(adapter_my_equipmet_request_item);
+                                                                        Log.d("Pttt",my_equipmet_request_array.get(my_equipmet_request_array.size()-1).getPartName());
                                                                     }
                                                                 });
 
